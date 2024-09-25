@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Validate Keyword Density on WordCounter","Validate basic keyword density","SUCCESS","2024-09-24T21:05:28.693769-05:00[America/Bogota]","0.0","3.19"
+"Validate Keyword Density on WordCounter","Validate keyword density ignoring case","SUCCESS","2024-09-24T21:05:37.7945135-05:00[America/Bogota]","0.0","3.88"
+"Validate Keyword Density on WordCounter","Validate keyword density with special characters","SUCCESS","2024-09-24T21:05:43.1567281-05:00[America/Bogota]","0.0","2.7"
+"Validate Keyword Density on WordCounter","Validate keyword density with extra spaces","SUCCESS","2024-09-24T21:05:48.3845858-05:00[America/Bogota]","0.0","2.48"
+"Validate Keyword Density on WordCounter","Validate keyword density with different word order","SUCCESS","2024-09-24T21:05:52.2013987-05:00[America/Bogota]","0.0","2.5"
+"Validate Keyword Density on WordCounter","Validate keyword density with new lines","SUCCESS","2024-09-24T21:05:56.9935389-05:00[America/Bogota]","0.0","2.83"
