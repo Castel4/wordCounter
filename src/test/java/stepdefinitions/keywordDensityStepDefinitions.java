@@ -3,6 +3,7 @@ package stepdefinitions;
 import com.lumu.test.interactions.WriteWord;
 import com.lumu.test.questions.KeywordDensity;
 import com.lumu.test.tasks.OpenTheWordCounter;
+import com.lumu.test.utils.WebDriverSetup;
 import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -20,12 +21,10 @@ import static org.hamcrest.Matchers.equalTo;
 public class keywordDensityStepDefinitions {
 
     private Actor user;
-    private WebDriver webDriver;
 
-    @Given("the user is on the WordCounter page2")
+    @Given("the user accesses the WordCounter page")
     public void theUserIsOnTheWordCounterPage() {
-        webDriver = new ChromeDriver();
-        user = Actor.named("User").can(BrowseTheWeb.with(webDriver));
+        user = WebDriverSetup.createUserWithBrowser();
         user.wasAbleTo(OpenTheWordCounter.page("https://wordcounter.net/"));
     }
 
@@ -47,9 +46,7 @@ public class keywordDensityStepDefinitions {
 
     @After
     public void tearDown() {
-        if (webDriver != null) {
-            webDriver.quit();
-        }
+        WebDriverSetup.tearDown();
     }
 }
 
